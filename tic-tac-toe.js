@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
 let game_history = Array(9).fill(null);
 var player = ['X','O']
 let current_player = player[0]
-//var status = document.getElementById('status')
+var messsage = document.getElementById('status')
 var btn = document.getElementsByClassName('btn')
 
-const winning =  [[0,1,2],[3,4,5],[6,7,8],[0,4,8],[2,4,6],[0,3,6],[1,4,7],[2,5,8]];
+const winners =  [[0,1,2],[3,4,5],[6,7,8],[0,4,8],[2,4,6],[0,3,6],[1,4,7],[2,5,8]];
 
 const squares = document.querySelectorAll("#board div");
 
@@ -35,7 +35,33 @@ for (let i = 0; i < squares.length; i++) {
         squares[i].classList.remove("hover")
     });
 
-}
+    
+
+} 
+
+    btn[0].addEventListener("click", () => {
+        squares.forEach((square) => {
+            game_history = Array(9).fill(null);
+            square.innerText = ''; 
+            square.classList.remove('X', 'O'); 
+        });
+
+    })
+
+
+
+} )  
+
+
+    
+
+
+    
+    
+
+    
+
+
 
     
 
@@ -44,15 +70,8 @@ for (let i = 0; i < squares.length; i++) {
 
  
 
-//btn.addEventListener("click", function restart_game(){
-    //squares.forEach(square => {
-        //squares.innerText = '';
-    //});
-//})
 
 
-
-})
 
 
 
