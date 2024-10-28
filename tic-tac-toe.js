@@ -27,13 +27,13 @@ for (let i = 0; i < squares.length; i++) {
 
     })
 
-    //squares[i].addEventListener('mouseenter', () => {
-        //squares[i].classList.add("hover");
-    //});
+    squares[i].addEventListener('mouseenter', () => {
+        squares[i].classList.add("hover");
+    });
     
-    //squares[i].addEventListener('mouseleave', () => {
-        //squares[i].classList.remove("hover")
-    //});
+    squares[i].addEventListener('mouseleave', () => {
+        squares[i].classList.remove("hover")
+    });
 
 }
 
