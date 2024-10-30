@@ -27,7 +27,6 @@ for (let i = 0; i < squares.length; i++) {
             message.classList.add('you-won');
             game_history = Array(9).fill(null);
         }
-        //game_history.push({ player: current_player, square: i });
         current_player = current_player === 'X' ? 'O' : 'X';
         }
 
